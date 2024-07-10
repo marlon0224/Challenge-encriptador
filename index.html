@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptado-Desencriptado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container__contenido__encriptar">
+            <input type="text" name="texto" class="encriptar__texto" id="encriptar__texto" 
+            placeholder="Ingresa el texto aquí"></>
+            <div class="container__aviso">
+                <p>Solo letras minúsculas y sin acentos </p>
+            </div>
+            <div class="container__contenido__botones">
+                <button class="boton__encriptar" type="button" onclick="encriptar()">
+                    Encriptar</button>
+                <button class="boton__desencriptar" type="button" onclick="desencriptar()">
+                    Desencriptar</button>
+            </div>   
+        </div>
+        <div class="container__contenido__desencriptar" >
+            
+            <textarea id="desencriptar__texto" class="desencriptar__texto"> </textarea>
+            <button class="boton__copiar" type="button" onclick="copiartexto()">
+                Copiar</button>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
